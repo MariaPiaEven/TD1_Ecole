@@ -1,24 +1,36 @@
+package com.mpeven.td2;
+
 import java.util.ArrayList;
 
 public class Ecole {
 
     protected String adresse;
 
-    protected ArrayList<Etudiant> listeEtudiants = new ArrayList<>();
-
     public Ecole(String adresse) {
         this.adresse = adresse;
+    }
+    protected ArrayList<Etudiant> listeEtudiants = new ArrayList<>();
+
+    public void setListeEtudiants(ArrayList<Etudiant> listeEtudiants) {
+        this.listeEtudiants = listeEtudiants;
     }
 
     public float moyenne() {
 
         float cumul = 0;
+        float count = 0;
 
         for (Etudiant etudiant : listeEtudiants) {
-            cumul += etudiant.getNoteGlobale();
+
+            for (Evaluation evaluation : etudiant.getListeEvaluations()) {
+               cumul += evaluation.getNote();
+               //count ++;
+            }
+
+            count += etudiant.getListeEvaluations().size();
         }
 
-        return cumul / listeEtudiants.size();
+        return cumul / count;
     }
 
     public String getAdresse() {
@@ -33,7 +45,5 @@ public class Ecole {
         return listeEtudiants;
     }
 
-    public void setListeEtudiants(ArrayList<Etudiant> listeEtudiants) {
-        this.listeEtudiants = listeEtudiants;
-    }
+
 }

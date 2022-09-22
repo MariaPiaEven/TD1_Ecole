@@ -1,3 +1,5 @@
+package com.mpeven.td2;
+
 public abstract class Personne {
 
     protected String nom;
