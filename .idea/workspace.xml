@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c72ce421-0441-482c-aa26-1eb382028d15" name="Changes" comment="Test java ecole" />
+    <list default="true" id="c72ce421-0441-482c-aa26-1eb382028d15" name="Changes" comment="Test java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +53,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663836041551</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test java">
+      <created>1663836095959</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663836095959</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -69,6 +76,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test java ecole" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test java ecole" />
+    <MESSAGE value="Test java" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
