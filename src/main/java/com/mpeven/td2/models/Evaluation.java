@@ -1,20 +1,12 @@
-package com.mpeven.td2;
+package com.mpeven.td2.models;
 
 public class Evaluation {
-    protected int note;
 
     protected String matiere;
+    protected float note;
 
-    public Evaluation(int note, String matiere){
-        this.note = note;
+    public Evaluation(String matiere, float note) {
         this.matiere = matiere;
-    }
-
-    public int getNote() {
-        return note;
-    }
-
-    public void setNote(int note) {
         this.note = note;
     }
 
@@ -24,5 +16,13 @@ public class Evaluation {
 
     public void setMatiere(String matiere) {
         this.matiere = matiere;
+    }
+
+    public float getNote() {
+        return note;
+    }
+
+    public void setNote(float note) {
+        this.note = note;
     }
 }
